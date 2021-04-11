@@ -252,7 +252,7 @@ int main(void) {
         }
         counterE++;
         if (counterE == 150) {
-            int tempx = rand() % (RESOLUTION_X - (2 * turrentSize) - enemySize);
+            int tempx = rand() % (RESOLUTION_X - (2 * turrentSize) - enemySize)+turrentSize-1;
             insertArray(&Enemy, tempx, 0);
             counterE = 0;
         }
